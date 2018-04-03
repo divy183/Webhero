@@ -1,3 +1,11 @@
-<p>
-  link will be here
-</p>
+<div class="page-content">
+  <h3>Heroes</h3>
+<ul class="heroes" *ngIf="heroes && heroes.length">
+<li *ngFor="let hero of heroes">
+  <div>{{hero.id}}</div>
+  <div>{{hero.name}}</div>
+  <div>{{hero.saying}}</div>
+</li> 
+  
+</ul>
+</div>

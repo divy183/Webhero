@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroesDataService } from './heroes-data.service';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    HttpClientModule
   ],
-  declarations: [HeroesComponent]
+  declarations: [HeroesComponent],
+  providers: [HeroesDataService]
 })
 export class HeroesModule { }
