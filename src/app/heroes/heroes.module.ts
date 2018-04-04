@@ -5,14 +5,15 @@ import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroesDataService } from './heroes-data.service';
 import { HttpClientModule} from '@angular/common/http';
-import { MatListModule } from '@angular/material';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     HeroesRoutingModule,
     HttpClientModule,
-    MatListModule
+    SharedModule
+
   ],
   declarations: [HeroesComponent],
   providers: [HeroesDataService]

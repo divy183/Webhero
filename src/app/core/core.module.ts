@@ -10,7 +10,7 @@ import { ToastService } from './toast.service';
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule // because we use <router-outlet> and routerLink
+    RouterModule 
   ],
   declarations: [ToolbarComponent],
   exports: [ToolbarComponent],
