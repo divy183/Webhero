@@ -1,0 +1,18 @@
+/* .mat-list-item{
+    margin-left: 16px;
+    text-align: left;
+} */
+@import '../../../styles/mixin';
+
+.heroes {
+  @include item-list;
+}
+
+.mat-card {
+  @include mat-card-layout;
+}
+
+.content-container {
+  @include content-container-layout;
+}
+
